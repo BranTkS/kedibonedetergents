@@ -19,10 +19,12 @@
 <body>
 
   <!-- ================= FLOATING CONTACT BUTTON (fixed) ================= -->
-  <div class="floating-contact" id="floatingContactBtn">
+  <a href="#contact">
+   <div class="floating-contact" id="floatingContactBtn">
     <i class="fas fa-comment-dots"></i>
     <span>Contact</span>
   </div>
+   </a>
 
   <!-- ================= HEADER / NAVIGATION ================= -->
   <header class="site-header">
@@ -58,8 +60,8 @@
             <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Us</a>
           </div>
           <div class="trust-stats">
-            <div><i class="fas fa-certificate"></i> ISO 9001:2024</div>
-            <div><i class="fas fa-leaf"></i> Eco-friendly chemistry</div>
+           <!--  <div><i class="fas fa-certificate"></i> ISO 9001:2024</div>
+            <div><i class="fas fa-leaf"></i> Eco-friendly chemistry</div> -->
             <div><i class="fas fa-shield-alt"></i> 100% quality tested</div>
           </div>
         </div>
@@ -91,7 +93,7 @@
           <!-- Product Card 1 -->
           <div class="product-card fade-up">
             <div class="card-icon"><i class="fas fa-tint"></i></div>
-            <h3>AlkaForce HD</h3>
+            <h3>Pine Gell</h3>
             <p>Heavy-duty alkaline degreaser – removes oil, grease and industrial soils. Safe on multiple surfaces.</p>
             <div class="product-badge">Heavy duty</div>
           </div>
@@ -165,14 +167,14 @@
       <div class="container contact-wrapper">
         <div class="contact-info fade-up">
           <h2>Let's connect</h2>
-          <p>Ready to discuss bulk orders, custom formulations, or distribution opportunities? Our team is here to help.</p>
+          <p>Ready to discuss bulk orders or distribution opportunities? Our team is here to help.</p>
           <div class="info-details">
-            <div><i class="fas fa-envelope"></i> <span>hello@purechemmanufacturing.com</span></div>
-            <div><i class="fas fa-phone-alt"></i> <span>+1 (888) 793-2456</span></div>
-            <div><i class="fas fa-map-marker-alt"></i> <span>4450 Innovation Way, Austin, TX 78744, USA</span></div>
+            <div><i class="fas fa-envelope"></i> <span>kvinoliah@gmail.com</span></div>
+            <div><i class="fas fa-phone-alt"></i> <span>+27659429754</span></div>
+            <div><i class="fas fa-map-marker-alt"></i> <span>Birch Acres mall</span></div>
           </div>
           <div class="contact-hours">
-            <i class="fas fa-clock"></i> Mon - Fri: 8:00 AM – 6:00 PM (CST)
+            <i class="fas fa-clock"></i> Mon - Fri: 8:00 AM – 6:00 PM
           </div>
         </div>
         <div class="contact-form-card fade-up delay-1">
@@ -180,11 +182,11 @@
           <form id="contactForm" action="#" method="post">
             <div class="form-group">
               <label for="name">Full name *</label>
-              <input type="text" id="name" name="name" placeholder="John Carter" required>
+              <input type="text" id="name" name="name" placeholder="name" required>
             </div>
             <div class="form-group">
               <label for="email">Email address *</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              <input type="email" id="email" name="email" placeholder="name@example.com" required>
             </div>
             <div class="form-group">
               <label for="message">Message / inquiry *</label>
@@ -202,7 +204,7 @@
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-brand">
-        <span class="logo-text">Pure<span class="accent">Chem</span></span>
+        <span class="logo-text">Kedibone<span class="accent">Cleaning Detergents</span></span>
         <p>Professional cleaning chemicals • Industrial & institutional grades</p>
       </div>
       <div class="footer-links">
@@ -212,7 +214,8 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="footer-copyright">
-        <p>© 2025 PureChem Manufacturing — Built on quality & trust</p>
+        <p>© <span id="year"></span><script>setInterval(()=>document.getElementById("year").innerText=new Date().getFullYear(),1e3)</script> 
+          Kedibone Cleaning Detergents — Built on quality & trust</p>
       </div>
     </div>
   </footer>

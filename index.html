@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Kedibone Cleaning Detergents - Industrial & commercial cleaning chemicals. Quality, safety, and reliability for modern facilities.">
   <title>Kedibone Cleaning Detergents | Professional Cleaning Chemicals Manufacturer</title>
+  <link rel="icon" href="images/modernlogonomargins.png" type="image/png">
   <!-- Preconnect for fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +16,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- main stylesheet -->
   <link rel="stylesheet" href="css/home.css">
+
+
+  <!-- emailjs integration -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "wDsGDq0t2sLtuGATD",
+        });
+    })();
+  </script>
 </head>
 <body>
 
@@ -181,7 +195,7 @@
           <h3>Send a message</h3>
           <form id="contactForm" action="#" method="post">
             <div class="form-group">
-              <label for="name">Full name *</label>
+              <label for="name">Name *</label>
               <input type="text" id="name" name="name" placeholder="name" required>
             </div>
             <div class="form-group">
